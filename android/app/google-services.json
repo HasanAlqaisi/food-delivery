@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "57168332081",
+    "project_id": "karrishni",
+    "storage_bucket": "karrishni.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57168332081:android:19bbd3ee5373910d955c10",
+        "android_client_info": {
+          "package_name": "com.app.karrishni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57168332081-7i40cro3973125m306sbufa4gjehmhus.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.karrishni",
+            "certificate_hash": "f0270e519ef8380be019340d70ec4275a2ffca54"
+          }
+        },
+        {
+          "client_id": "57168332081-ab1kh8ftn5fkg3ull3kpqrvrs0ee14vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGAtCMUxX8F6KlGEkns6S726mh9oogUac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57168332081-ab1kh8ftn5fkg3ull3kpqrvrs0ee14vq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
