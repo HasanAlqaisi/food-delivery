@@ -16,16 +16,17 @@ import 'package:karrishni/representation/auth/controller/phone_verification_cont
 class PhoneVerificationBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut(() => FirebaseAuth.instance);
-    Get.lazyPut(() => FirebaseFirestore.instance);
+    Get.lazyPut(() => FirebaseAuth.instance, fenix: true);
+    Get.lazyPut(() => FirebaseFirestore.instance, fenix: true);
     Get.lazyPut<AuthDataSource>(
         () => AuthDataSourceImpl(auth: Get.find(), store: Get.find()));
     Get.lazyPut<AuthRepo>(() => AuthRepoImpl(authDataSource: Get.find()));
     Get.lazyPut(() => VerifyByPhoneNumber(authRepo: Get.find()));
-    Get.lazyPut(() => LoginWithCredential(authRepo: Get.find()));
-    Get.lazyPut(() => CreatePhoneAuthCredential(authRepo: Get.find()));
+    Get.lazyPut(() => LoginWithCredential(authRepo: Get.find()), fenix: true);
+    Get.lazyPut(() => CreatePhoneAuthCredential(authRepo: Get.find()),
+        fenix: true);
     Get.lazyPut(() => AuthStateChanges(authRepo: Get.find()), fenix: true);
-    Get.lazyPut(() => AddNewUser(authRepo: Get.find()));
+    Get.lazyPut(() => AddNewUser(authRepo: Get.find()), fenix: true);
     Get.put(
       PhoneVerifController(
         verifyByPhoneNumber: Get.find(),

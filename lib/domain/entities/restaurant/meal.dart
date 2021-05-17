@@ -4,7 +4,6 @@ import 'addition.dart';
 
 class Meal extends Equatable {
   Meal({
-    required this.id,
     required this.name,
     required this.desc,
     required this.image,
@@ -13,7 +12,6 @@ class Meal extends Equatable {
     required this.additions,
   });
 
-  final String id;
   final String name;
   final String desc;
   final String image;
@@ -22,5 +20,5 @@ class Meal extends Equatable {
   final List<Addition> additions;
 
   @override
-  List<Object?> get props => [id, name, desc, image, price, sale, additions];
+  List<Object?> get props => [name, desc, image, price, sale, additions];
 }

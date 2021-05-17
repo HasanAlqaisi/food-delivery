@@ -3,17 +3,15 @@ import 'choice.dart';
 
 class Addition extends Equatable {
   Addition({
-    required this.id,
     required this.name,
     required this.oneShot,
     required this.choices,
   });
 
-  final String id;
   final String name;
-  final String oneShot;
+  final bool oneShot;
   final List<Choice> choices;
 
   @override
-  List<Object?> get props => [id, name, oneShot, choices];
+  List<Object?> get props => [name, oneShot, choices];
 }

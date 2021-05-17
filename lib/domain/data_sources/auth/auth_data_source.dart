@@ -17,7 +17,7 @@ abstract class AuthDataSource {
 
   Future<User?> loginWithCredential(AuthCredential authCredential);
 
-  Stream<User?> authStateChangesStream();
-
   Future<void> addNewUser(entity.User user);
+
+  Stream<User?> authStateChangesStream();
 }

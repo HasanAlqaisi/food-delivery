@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:karrishni/core/constants/constants.dart';
-import 'package:karrishni/core/constants/firebase_paths.dart';
 import 'package:karrishni/core/mappers/entity_mappers/user_entity.dart';
+import 'package:karrishni/core/utils/constants.dart';
+import 'package:karrishni/core/utils/firebase_helper/firebase_paths.dart';
 import 'package:karrishni/domain/data_sources/auth/auth_data_source.dart';
 import 'package:karrishni/domain/entities/auth/user.dart' as entity;
 

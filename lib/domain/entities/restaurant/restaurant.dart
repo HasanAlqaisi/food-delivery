@@ -1,5 +1,4 @@
 import 'package:equatable/equatable.dart';
-import 'package:karrishni/domain/entities/auth/user.dart';
 import 'package:karrishni/domain/entities/restaurant/meal_section.dart';
 
 import 'promo.dart';
@@ -18,14 +17,28 @@ class Restaurant extends Equatable {
   });
 
   final String id;
-  final User owner;
+  final String owner;
   final String name;
   final String image;
-  final String deliveryPrice;
+  final double deliveryPrice;
   final String address;
   final String city;
-  final List<MealSection> mealSections;
-  final List<Promo> promos;
+  final List<MealSection>? mealSections;
+  final List<Promo>? promos;
+
+  Restaurant copyWith(Restaurant restaurant) {
+    return Restaurant(
+      id: id,
+      owner: owner,
+      name: name,
+      image: image,
+      deliveryPrice: deliveryPrice,
+      address: address,
+      city: city,
+      mealSections: restaurant.mealSections ?? mealSections,
+      promos: restaurant.promos ?? promos,
+    );
+  }
 
   @override
   List<Object?> get props => [

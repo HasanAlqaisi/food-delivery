@@ -1,5 +1,4 @@
 import 'package:equatable/equatable.dart';
-import 'package:karrishni/domain/entities/restaurant/restaurant.dart';
 
 class Category extends Equatable {
   Category({
@@ -11,8 +10,8 @@ class Category extends Equatable {
 
   final String id;
   final String name;
-  final String image;
-  final List<Restaurant> restaurants;
+  final String? image;
+  final List<String>? restaurants;
 
   @override
   List<Object?> get props => [id, name, image, restaurants];
